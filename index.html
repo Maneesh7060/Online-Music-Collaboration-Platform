@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manish Gangwar is a B.Tech Computer Science student and aspiring Frontend Developer specializing in web development, Java, OOP, DSA, SQL, and responsive user interfaces." />
+  <meta name="keywords" content="Manish Gangwar, Frontend Developer, Computer Science Student, Java, HTML, CSS, JavaScript, Portfolio" />
+  <meta name="author" content="Manish Gangwar" />
+  <meta name="theme-color" content="#07152f" />
+  <meta property="og:title" content="Manish Gangwar | Frontend Developer Portfolio" />
+  <meta property="og:description" content="Premium portfolio for a B.Tech Computer Science student focused on frontend engineering and software development." />
+  <meta property="og:type" content="website" />
+  <title>Manish Gangwar | Frontend Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading portfolio">
+    <div class="loader__ring"></div>
+    <p>Loading portfolio</p>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a href="#home" class="brand" aria-label="Manish Gangwar home">
+        <span class="brand__mark">MG</span>
+        <span class="brand__text">Manish<span>Dev</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#resume">Resume</a></li>
+        <li><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero__gradient" aria-hidden="true"></div>
+      <div class="floating-icons" aria-hidden="true">
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-solid fa-database"></i>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__copy reveal">
+          <p class="eyebrow"><span></span> Available for frontend opportunities</p>
+          <h1 id="hero-title">Hi, I'm <span>Manish Gangwar</span></h1>
+          <h2>Frontend Developer | B.Tech Computer Science Student</h2>
+          <p class="typing-line" aria-live="polite">I build <span id="typingText"></span></p>
+          <p class="hero__intro">Passionate Computer Science student specializing in Web Development, Object-Oriented Programming, Data Structures & Algorithms, and Software Development. Dedicated to building efficient, scalable, and user-friendly applications while continuously learning modern technologies.</p>
+          <div class="hero__actions" aria-label="Hero actions">
+            <a class="btn btn--primary" href="#projects"><i class="fa-solid fa-code" aria-hidden="true"></i> View Projects</a>
+            <a class="btn btn--glass" href="assets/Manish-Gangwar-Resume.pdf" download><i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume</a>
+            <a class="btn btn--outline" href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-label="Profile image placeholder and developer workspace illustration">
+          <div class="profile-card glass-card">
+            <div class="profile-card__image" role="img" aria-label="Professional profile image placeholder">
+              <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+            </div>
+            <div class="profile-card__meta">
+              <strong>Manish Gangwar</strong>
+              <span>Frontend Developer</span>
+            </div>
+          </div>
+          <div class="workspace-card glass-card">
+            <div class="workspace-card__bar"><span></span><span></span><span></span></div>
+            <code>&lt;portfolio status="building" /&gt;</code>
+            <div class="workspace-card__stats">
+              <span><b>10+</b> Skills</span>
+              <span><b>4</b> Projects</span>
+              <span><b>6</b> Certificates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> About Me</p>
+          <h2 id="about-title">Driven by clean code, curiosity, and impact.</h2>
+        </div>
+        <div class="about__grid">
+          <article class="about__story card reveal">
+            <h3>Computer Science Engineering Student</h3>
+            <p>I am a Computer Science Engineering student with a strong passion for Web Development, Software Engineering, and Problem Solving. I enjoy building modern web applications, learning new technologies, and solving complex programming challenges using efficient algorithms and data structures.</p>
+            <div class="education-pill">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              <div>
+                <strong>Bachelor of Technology (B.Tech)</strong>
+                <span>Computer Science Engineering</span>
+              </div>
+            </div>
+          </article>
+          <article class="about__objective card reveal">
+            <h3>Career Objective</h3>
+            <p>Seeking opportunities to apply my programming and problem-solving skills in real-world software development projects while continuously enhancing my technical expertise and contributing to innovative solutions.</p>
+          </article>
+          <div class="strengths reveal" aria-label="Personal strengths">
+            <span>Problem Solving</span>
+            <span>Quick Learner</span>
+            <span>Team Collaboration</span>
+            <span>Analytical Thinking</span>
+            <span>Adaptability</span>
+            <span>Leadership</span>
+            <span>Communication Skills</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Skills</p>
+          <h2 id="skills-title">Technical and professional capabilities.</h2>
+        </div>
+        <div class="skills__grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Projects</p>
+          <h2 id="projects-title">Selected work and build concepts.</h2>
+        </div>
+        <div class="filter-group reveal" role="list" aria-label="Project category filters">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="web" type="button">Web</button>
+          <button class="filter-btn" data-filter="java" type="button">Java</button>
+          <button class="filter-btn" data-filter="future" type="button">Future</button>
+        </div>
+        <div class="projects__grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section resume" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Resume</p>
+          <h2 id="resume-title">Academic journey and professional summary.</h2>
+        </div>
+        <div class="resume__grid">
+          <article class="resume-card card reveal">
+            <div class="resume-card__thumb" aria-label="Professional resume thumbnail placeholder">
+              <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+              <span>Resume Preview</span>
+            </div>
+            <p>Concise profile highlighting frontend development skills, Java foundations, academic projects, and career aspirations.</p>
+            <div class="resume-card__actions">
+              <a class="btn btn--primary" href="assets/Manish-Gangwar-Resume.pdf" download>Download Resume</a>
+              <a class="btn btn--outline" href="assets/Manish-Gangwar-Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+            </div>
+          </article>
+          <div class="timeline reveal" aria-label="Education timeline">
+            <div class="timeline__item">
+              <span>Now</span>
+              <h3>B.Tech Computer Science Engineering</h3>
+              <p>Focused on frontend development, software engineering fundamentals, OOP, DSA, SQL, and practical web applications.</p>
+            </div>
+            <div class="timeline__item">
+              <span>Milestones</span>
+              <h3>Academic & Technical Growth</h3>
+              <p>Built projects, completed technical certifications, practiced programming concepts, and strengthened collaborative development habits.</p>
+            </div>
+            <div class="timeline__item">
+              <span>Achievements</span>
+              <h3>Programming Excellence</h3>
+              <p>Hands-on work in Java programming, web development, database design, Git workflows, and responsive interface development.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section certifications" id="certifications" aria-labelledby="certifications-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Certifications</p>
+          <h2 id="certifications-title">Learning credentials and focus areas.</h2>
+        </div>
+        <div class="filter-group reveal" role="list" aria-label="Certification category filters">
+          <button class="cert-filter active" data-filter="all" type="button">All</button>
+          <button class="cert-filter" data-filter="programming" type="button">Programming</button>
+          <button class="cert-filter" data-filter="web" type="button">Web</button>
+          <button class="cert-filter" data-filter="tools" type="button">Tools</button>
+        </div>
+        <div class="certifications__grid" id="certificationsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Contact</p>
+          <h2 id="contact-title">Let's build something meaningful.</h2>
+        </div>
+        <div class="contact__grid">
+          <form class="contact-form card reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-row">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project discussion" required />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+              <small class="error-message"></small>
+            </div>
+            <button class="btn btn--primary" type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-info reveal" aria-label="Contact information">
+            <article class="info-card card"><i class="fa-solid fa-envelope" aria-hidden="true"></i><div><strong>Email</strong><a href="mailto:manish.gangwar@example.com">manish.gangwar@example.com</a></div></article>
+            <article class="info-card card"><i class="fa-solid fa-phone" aria-hidden="true"></i><div><strong>Phone</strong><a href="tel:+910000000000">+91 00000 00000</a></div></article>
+            <article class="info-card card"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><div><strong>Location</strong><span>India</span></div></article>
+            <article class="info-card card"><i class="fa-brands fa-github" aria-hidden="true"></i><div><strong>GitHub</strong><a href="https://github.com/" target="_blank" rel="noopener">github.com/manishgangwar</a></div></article>
+            <article class="info-card card"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><div><strong>LinkedIn</strong><a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/manishgangwar</a></div></article>
+            <div class="social-links" aria-label="Social media links">
+              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://x.com/" target="_blank" rel="noopener" aria-label="Twitter X"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>Copyright © 2026 Manish Gangwar. All rights reserved.</p>
+      <nav aria-label="Footer quick links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__socials">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="Twitter X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
